@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
-local keymap = vim.keymap.set
+vim.g.maplocalleader = "\\"
 
+local keymap = vim.keymap.set
 -- FILE OPS
 keymap("n", "<leader>e", ":Ex<CR>", { desc = "Open netrw" })
 
