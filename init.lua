@@ -1,4 +1,4 @@
 --main init
-require("config.keymaps")
-require("config.options")
-require("config.lazy")
+require("keymaps")
+require("options")
+require("lazyConfig")
