@@ -38,3 +38,4 @@ keymap('n', '<leader>sh', ':split<CR>')  -- horizontal split
 keymap('n', '<leader>vh', ':vsplit | wincmd l<CR>') -- move right
 keymap('n', '<leader>vj', ':split | wincmd j<CR>')  -- move down
 
+keymap('n', '<leader>lf', vim.lsp.buf.format)
