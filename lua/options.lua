@@ -13,6 +13,7 @@ opt.smartindent = true
 --search
 opt.ignorecase = true
 opt.smartcase = true
+
 --ui
 opt.wrap = false
 opt.termguicolors = true
@@ -21,6 +22,4 @@ opt.signcolumn = "yes"
 opt.winborder = "rounded"
 
 opt.mouse = "a"
-opt.clipboard = "unnamedplus"
 opt.swapfile = false
-

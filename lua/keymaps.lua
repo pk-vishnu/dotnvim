@@ -13,6 +13,10 @@ keymap("n", "<leader>bd", ":bd<CR>", { desc = "Delete buffer" })
 keymap("n", "<leader>bl", ":ls<CR>", { desc = "List buffers" })
 keymap("n", "<leader>bf", ":b ", { desc = "Fuzzy find buffer" })
 keymap("n", "<leader>bda", ":%bd|e#<CR>", { desc = "Delete all buffers except current" })
+keymap('n', '<C-d>', '<C-d>zz')
+keymap('n', '<C-u>', '<C-u>zz')
+keymap("v", "J", ":m '>+1<CR>gv=gv")
+keymap("v", "K", ":m '<-2<CR>gv=gv")
 
 -- move between splits
 keymap('n', '<leader>h', '<C-w>h') -- left
@@ -38,4 +42,6 @@ keymap('n', '<leader>sh', ':split<CR>')  -- horizontal split
 keymap('n', '<leader>vh', ':vsplit | wincmd l<CR>') -- move right
 keymap('n', '<leader>vj', ':split | wincmd j<CR>')  -- move down
 
-keymap('n', '<leader>lf', vim.lsp.buf.format)
+keymap('n', '<leader>lf', vim.lsp.buf.format)       -- LSP Buffer Format
+keymap('v', '<leader>y', '"+y')                     -- Copy into system clipboard
+keymap('v', '<leader>p', '"+p')                     -- Paste from system clipboard
