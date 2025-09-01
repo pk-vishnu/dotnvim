@@ -1,27 +1,27 @@
 return {
   "neovim/nvim-lspconfig",
   config = function()
-    require 'lspconfig'.lua_ls.setup {
+    require("lspconfig").lua_ls.setup({
       on_init = function(client)
-        client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua, {
+        client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
           runtime = {
-            version = 'LuaJIT'
+            version = "LuaJIT",
           },
           workspace = {
             checkThirdParty = false,
             library = {
-              vim.env.VIMRUNTIME
-            }
-          }
+              vim.env.VIMRUNTIME,
+            },
+          },
         })
       end,
       settings = {
-        Lua = {}
-      }
-    }
-    vim.lsp.enable('pyright')
-    vim.lsp.enable('ts_ls')
-    vim.lsp.enable('clangd')
-    vim.lsp.enable('tinymist')
-  end
+        Lua = {},
+      },
+    })
+    vim.lsp.enable("pyright")
+    vim.lsp.enable("ts_ls")
+    vim.lsp.enable("clangd")
+    vim.lsp.enable("tinymist")
+  end,
 }

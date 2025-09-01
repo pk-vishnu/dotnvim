@@ -1,11 +1,10 @@
-return
-{
-  'saghen/blink.cmp',
-  version = '1.*',
+return {
+  "saghen/blink.cmp",
+  version = "1.*",
   opts = {
-    keymap = { preset = 'default' },
+    keymap = { preset = "default" },
     appearance = {
-      nerd_font_variant = 'mono',
+      nerd_font_variant = "mono",
       kind_icons = {
         Text = "[Txt]",
         Method = "[Mthd]",
@@ -32,13 +31,13 @@ return
         Event = "[Evt]",
         Operator = "[Op]",
         TypeParameter = "[TParam]",
-      }
+      },
     },
     completion = { documentation = { auto_show = false } },
     sources = {
-      default = { 'lsp', 'path', 'buffer' },
+      default = { "lsp", "path", "buffer" },
     },
-    fuzzy = { implementation = "prefer_rust_with_warning" }
+    fuzzy = { implementation = "prefer_rust_with_warning" },
   },
-  opts_extend = { "sources.default" }
+  opts_extend = { "sources.default" },
 }

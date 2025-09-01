@@ -1,6 +1,5 @@
-return
-{
-  'stevearc/conform.nvim',
+return {
+  "stevearc/conform.nvim",
   config = function()
     require("conform").setup({
       formatters_by_ft = {
@@ -15,12 +14,12 @@ return
         lsp_format = "fallback",
       },
     })
-    vim.keymap.set({ 'n', 'v' }, "<leader>lf", function()
+    vim.keymap.set({ "n", "v" }, "<leader>lf", function()
       require("conform").format({
         lsp_fallback = true,
         async = false,
-        timeout_ms = 500
+        timeout_ms = 500,
       })
     end, { desc = "Format file" })
-  end
+  end,
 }

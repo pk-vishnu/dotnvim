@@ -1,8 +1,7 @@
-return
-{
+return {
   "mason-org/mason-lspconfig.nvim",
   opts = {
-    ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "clangd", "ts_ls","tinymist" },
+    ensure_installed = { "lua_ls", "rust_analyzer", "pyright", "clangd", "ts_ls", "tinymist" },
   },
   dependencies = {
     {
@@ -12,10 +11,10 @@ return
           icons = {
             package_installed = "✓",
             package_pending = "➜",
-            package_uninstalled = "✗"
-          }
-        }
-      }
+            package_uninstalled = "✗",
+          },
+        },
+      },
     },
     "neovim/nvim-lspconfig",
   },

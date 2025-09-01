@@ -1,7 +1,6 @@
-return
-{
-  'chomosuke/typst-preview.nvim',
+return {
+  "chomosuke/typst-preview.nvim",
   lazy = false,
-  version = '1.*',
-  opts = {}
+  version = "1.*",
+  opts = {},
 }
