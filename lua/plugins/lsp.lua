@@ -77,5 +77,6 @@ return {
     vim.lsp.enable("ts_ls")
     vim.lsp.enable("clangd")
     vim.lsp.enable("tinymist")
+    vim.lsp.enable("rust_analyzer")
   end,
 }
