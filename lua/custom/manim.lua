@@ -31,7 +31,7 @@ local function manim_render(scene)
   })
 end
 
-vim.api.nvim_create_user_command("ManimRender", function(opts)
+vim.api.nvim_create_user_command("ManimPreview", function(opts)
   manim_render(opts.args)
 end, {
   desc = "Render Manim scene with -pql (optional scene name)",
