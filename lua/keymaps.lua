@@ -48,3 +48,10 @@ keymap({ "v", "n" }, "<leader>p", '"+p') -- Paste from system clipboard
 
 keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>")
 keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
+
+keymap("n", "<leader>xq", function()
+  vim.diagnostic.setqflist({
+    open = true,
+    bufnr = 0,
+  })
+end)
