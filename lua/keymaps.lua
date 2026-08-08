@@ -43,8 +43,6 @@ keymap("n", "<leader>vh", ":vsplit | wincmd l<CR>") -- move right
 keymap("n", "<leader>vj", ":split | wincmd j<CR>") -- move down
 
 keymap("n", "<leader>lf", vim.lsp.buf.format) -- LSP Buffer Format
-keymap({ "v", "n" }, "<leader>y", '"+y') -- Copy into system clipboard
-keymap({ "v", "n" }, "<leader>p", '"+p') -- Paste from system clipboard
 
 keymap("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>")
 keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
